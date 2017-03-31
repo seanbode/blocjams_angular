@@ -6,7 +6,6 @@ var animatePoints = function() {
     });
   };
   $.each($('.point'), revealPoint);
-  };
 };
 
 $(window).load(function() {
@@ -17,9 +16,9 @@ $(window).load(function() {
   }
   var scrollDistance = $('.selling-points').offset().top - $(window).height() + 200;
 
-   $(window).scroll(function(event) {
+  $(window).scroll(function(event) {
     if ($(window).scrollTop() >= scrollDistance) {
       animatePoints();
     }
   });
-};
+});
