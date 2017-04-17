@@ -1,7 +1,7 @@
 angular
   .module('blocJams', ['ui.router'])
-  .config(function($stateProvider, $locationProvider) {
-    $stateProvider
+  .config(function($stateProvider, $locationProvider, $urlRouterProvider) {
+		$stateProvider
       .state('landing', {
           url: '/',
           controller: 'LandingCtrl as landing',
@@ -13,11 +13,12 @@ angular
        })
        .state('collection', {
           url: '/collection',
-          controller: 'CollectionCtrl as collection',
+          controller: 'CollectionCtrl',
           templateUrl: '/templates/collection.html'
        })
        .state('metrics', {
           url: '/metrics',
           templateUrl: '/templates/metrics.html'
        });
+		$urlRouterProvider.otherwise('/');
   });
