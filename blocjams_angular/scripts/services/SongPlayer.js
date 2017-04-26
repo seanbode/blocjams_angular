@@ -20,7 +20,7 @@
       * @param {Object} song
       */
       var setSong = function(song) {
-        if (currentSong !== song) {
+        if (SongPlayer.currentSong != song) {
           if (currentBuzzObject) {
             currentBuzzObject.stop();
             currentSong.playing = null;
@@ -32,7 +32,7 @@
           currentSong = song;
           currentBuzzObject.play();
           song.playing = true;
-        } else if (currentSong === song) {
+        } else if (SongPlayer.currentSong === song) {
           if (currentBuzzObject.isPaused()) {
               currentBuzzObject.play();
               song.playing = true;
@@ -43,6 +43,8 @@
       SongPlayer.play = function(song) {
         song = song || SongPlayer.currentSong;
         setSong(song);
+        currentBuzzObject.play();
+        song.playing = true;
       };
       SongPlayer.pause = function(song) {
         song = song || SongPlayer.currentSong;
@@ -63,8 +65,6 @@
           playSong(song);
         }
       };
-
-
 
       return SongPlayer;
     }
