@@ -19,7 +19,7 @@
       listSongsPlayed: function() {
         var songs = [];
         angular.forEach(JSON.parse($window.localStorage.songPlays), function(song) {
-            songs.push(song.title);
+          songs.push(song.title);
         });
         return songs;
       }
@@ -27,13 +27,13 @@
   }
 
 angular
-    .module('blocJams')
-    .controller('MetricController', function ($scope, $rootScope, Metric) {
-      $scope.metric = Metric
-      $scope.buttonCallback = function() {
-        alert("button clicked");
-        Metrics.listSongsPlayed()
-      };
-    })
-    .service('Metric', Metric);
+  .module('blocJams')
+  .controller('MetricController', function ($scope, $rootScope, Metric) {
+    $scope.metric = Metric
+    $scope.buttonCallback = function() {
+      alert("button clicked");
+      Metrics.listSongsPlayed()
+    };
+  })
+  .service('Metric', Metric);
 })();
