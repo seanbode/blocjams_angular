@@ -7,17 +7,19 @@
       <a class="play-pause">
         <span class="ion-play"
               ng-show="!playerBar.songPlayer.currentSong.playing"
-              ng-click="playerBar.songPlayer.play()">
+              ng-click="playerBar.songPlayer.play(playerBar.SongPlayer.currentSong)">
           <!-- <ng-click='buttonCallback()'> {{metric.registerSongPlay(song)}} -->
           <!-- {{ }} -->
         </span>
         <span class="ion-pause"
               ng-show="playerBar.songPlayer.currentSong.playing"
-              ng-click="playerBar.songPlayer.pause()">
+              ng-click="playerBar.songPlayer.pause(playerBar.SongPlayer.currentSong)">
         </span>
       </a>
       <a class="next">
-        <span class="ion-skip-forward"></span>
+        <span class="ion-skip-forward"
+              ng-click="playerBar.songPlayer.next()">
+        </span>
       </a>
     </div>
     <div class="control-group currently-playing">
