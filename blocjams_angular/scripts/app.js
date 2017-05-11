@@ -19,6 +19,7 @@ angular
        })
        .state('metrics', {
           url: '/metrics',
+          controller: 'MetricsCtrl',
           templateUrl: '/templates/metrics.html'
        });
     $urlRouterProvider.otherwise('/');
