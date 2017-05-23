@@ -1,0 +1,23 @@
+{
+  "name": "chartist.json",
+  "description": "json file to contain chartist data.",
+  "main": "index.js",
+  "authors": [
+    "Sean Bode <seanpaulbode@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/seanbode/blocjams_angular",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-nvd3": "^1.0.9",
+    "chartist": "^0.11.0",
+    "angular-chartist.js": "https://github.com/willsoto/angular-chartist.js.git#^4.3.1"
+  }
+}

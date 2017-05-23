@@ -1,0 +1,15 @@
+{
+  "name": "angular-chartist.js",
+  "homepage": "https://github.com/willsoto/angular-chartist.js",
+  "version": "4.3.1",
+  "_release": "4.3.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v4.3.1",
+    "commit": "c164c4fabaf1782d211c15689554f9845e553b7b"
+  },
+  "_source": "https://github.com/willsoto/angular-chartist.js.git",
+  "_target": "^4.3.1",
+  "_originalSource": "https://github.com/willsoto/angular-chartist.js.git",
+  "_direct": true
+}
