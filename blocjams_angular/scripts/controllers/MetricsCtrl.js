@@ -3,7 +3,7 @@ angular
   .controller('MetricsCtrl', function ($scope, $rootScope, Metrics) {
     $scope.metric = { chart: Metrics.chart }
 
-    $scope.bardata = {
+    $scope.data = {
       labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
       series:
       [
@@ -18,7 +18,7 @@ angular
     // $scope.data = [
     //   {song: "blue", plays: 5 }
     // ]
-  }).directive('pieChart', function() {
+  }).directive('chartist', function() {
     return {
 			restrict: 'EA',
 			template: '<div class="ct-chart ct-perfect-fourth"></div>',
