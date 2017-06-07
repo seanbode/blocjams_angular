@@ -15,22 +15,29 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.css"/>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" /> -->
   </head>
 
   <body class="landing">
     <ui-view></ui-view>
     <script data-require="angular.js@1.4.3" data-semver="1.4.3" src="https://code.angularjs.org/1.4.3/angular.js"></script>
-    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- CHARTIST -->
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <!--added to the following script "https:" could the problem be a typo-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.0/chartist.js"></script>
-    <script src="/bower_components/angular-chartist.js/dist/angular-chartist.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
+    <!--added to the following script "https:/"  -->
+    <script src="https://bower_components/angular-chartist.js/dist/angular-chartist.js"></script>
+    <!-- nvd3 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-nvd3/1.0.9/angular-nvd3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-nvd3/1.0.9/angular-nvd3.js"></script> -->
+    <!--UI ROUTER-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"></script>
+    <!-- app scripts & templates -->
     <script src="/scripts/app.js"></script>
     <script src="/scripts/services/Fixtures.js"></script>
     <script src="/scripts/services/SongPlayer.js"></script>
